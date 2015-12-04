@@ -1,0 +1,98 @@
+ethstatus (0.4.4) unstable; urgency=low
+
+  * New maintainer. (Closes: #677768)
+  * Updated debian/compat version to 5
+  * Updated Standards-Version to 3.9.4
+  * Fixed debian/rules for make-clean-error
+  * Fixed debian/rules for missing-recommended-target
+  * Fixed debian/rules for hardening-no-relro
+
+ -- Jeffrin Jose T <ahiliation@yahoo.co.in>  Sat, 06 Jul 2013 21:01:51 +0530 
+
+ethstatus (0.4.3) unstable; urgency=low
+
+  * New maintainer. (Closes: #394092)
+  * Upstream is the same as Debian maintainer.
+    Therefore, build a native Debian package.
+  * Update Standards-Version to 3.7.2.
+  * New FSF address in COPYRIGHT and debian/copyright.
+  * Conform to policy by using "-Wall -g -O2" as CFLAGS.
+
+ -- Aurélien GÉRÔME <ag@roxor.cx>  Fri, 20 Oct 2006 00:10:20 +0200
+
+ethstatus (0.4.2-2) unstable; urgency=low
+
+  * raised the standards version to 3.6.1
+  * removed old comments from the rules file (gzip for manpages)
+
+ -- Christoph Haas <email@christoph-haas.de>  Sun, 21 Dec 2003 22:44:33 +0100
+
+ethstatus (0.4.2-1) unstable; urgency=low
+
+  * New upstream release
+  * added myself to the copyright
+  * CFLAGS is now exported in the rules file
+  * lazy uploaders removed ;)
+  * manpage is now provided in the upstream archive instead of the diff.gz
+
+ -- Christoph Haas <email@christoph-haas.de>  Sun, 21 Dec 2003 18:36:35 +0100
+
+ethstatus (0.4.1-2) unstable; urgency=low
+
+  * Removed the 'dh_installchangelogs' file that was left in the build
+    directory accidentally. (Thanks to Joe Nahmias <joe@nahmias.net>.)
+
+ -- Christoph Haas <email@christoph-haas.de>  Fri, 12 Dec 2003 15:50:22 +0100
+
+ethstatus (0.4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Now values larger than 1024 (up to 1024^2) can be used with the -S 
+    option (closes: #214711)
+
+ -- Christoph Haas <email@christoph-haas.de>  Fri, 14 Nov 2003 22:56:50 +0100
+
+ethstatus (0.4-2) unstable; urgency=low
+
+  * Fixed the copyright note (did not contain the full GPL).
+  * Man page is now installed by dh_installman using 'ethstatus.manpages'
+  * Typos fixed (inconsistent uppercase/lowercase use of
+    ethstatus, Ethstatus and EthStatus).
+  * Removed unused parts of the rules file.
+  * Updated the standards version to 3.6.0.
+
+ -- Christoph Haas <email@christoph-haas.de>  Wed,  6 Aug 2003 20:25:51 +0200
+
+ethstatus (0.4-1) unstable; urgency=low
+
+  * Christoph Haas is now also upstream maintainer as the original author
+    is no longer actively supporting and developing this application
+  * Interface names are no longer restricted to eth*
+  * Command line options displayed when running with "-h" or when running
+    with invalid arguments
+  * Interface speed now also selectable in absolute values
+    by using the "-S" option (e.g. -S 128k)
+  * Removed the "runonboot" program (you are free to start ethstatus
+    manually from the /etc/inittab if you miss this feature)
+  * Removed global configuration file /etc/ethstatus.cfg
+    (ethstatus runs well with command line options only)
+  * Removed email check
+  * Scaling of bytes/KB/MB units is computed automatically
+  * Uses getopt to prevent segmentation faults when parsing
+    command-line argument
+  * Removed the options "--bytes", "--packets", "--errors"
+    and "--ipaddress" as this information can be fetched with ifconfig.
+
+ -- Christoph Haas <email@christoph-haas.de>  Fri, 16 May 2003 21:49:21 +0200
+
+ethstatus (0.3.0-2) unstable; urgency=low
+
+  * Build-depends fixed (closes: #193262)
+
+ -- Christoph Haas <email@christoph-haas.de>  Wed, 14 May 2003 18:16:28 +0200
+
+ethstatus (0.3.0-1) unstable; urgency=low
+
+  * Initial Release (closes: #126200).
+
+ -- Christoph Haas <email@christoph-haas.de>  Sat, 10 May 2003 15:48:17 +0200

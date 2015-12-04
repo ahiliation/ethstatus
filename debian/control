@@ -1,0 +1,15 @@
+Source: ethstatus
+Section: net
+Priority: optional
+Maintainer:Jeffrin Jose T <ahiliation@yahoo.co.in> 
+Build-Depends: debhelper (>> 5.0.0), libncurses5-dev
+Standards-Version: 3.9.4
+
+Package: ethstatus
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends}
+Description: console-based ethernet statistics monitor
+ Ethstatus is a console-based monitoring utility for displaying
+ statistical data of the ethernet interface on a quantity basis.
+ It is similar to iptraf but is meant to run as a permanent console
+ task to monitor the network load.
