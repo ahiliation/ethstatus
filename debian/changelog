@@ -1,3 +1,6 @@
+ethstatus 0.4.4-1 unstable; urgency=low
+  * Fixed warning for variable set but unused situation
+
 ethstatus (0.4.4) unstable; urgency=low
 
   * New maintainer. (Closes: #677768)
