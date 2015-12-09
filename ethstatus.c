@@ -43,7 +43,7 @@
 #include <netinet/if_ether.h>
 #include <linux/netdevice.h> 
 #include <netinet/in.h>
-
+/* #include <net/if.h> */
 #include "ethstatus.h"
 
 
@@ -260,7 +260,10 @@ void clear_info(void)
 
 void do_exit(int x, short int line)
 {
+   struct ifreq ifr;
    fprintf(stderr, "\n\nEthStatus-v%s - %s", VERSION,AUTHOR);
+   fprintf(stdout,"\n %d \n",ifr.ifr_mtu);
+   
 /*
    if(!x)
      fprintf(stderr, "\n%s: Have no value in line %d\n\n", RC_FILENAME, line);
