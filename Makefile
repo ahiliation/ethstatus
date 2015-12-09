@@ -4,7 +4,7 @@
 DESTDIR =
 
 LDFLAGS = -lncurses
-CFLAGS = -O2 -Wall
+CFLAGS = -O2  -Wall -Wunused-but-set-variable
 #CFLAGS = -Wall -g
 
 BIN = ethstatus

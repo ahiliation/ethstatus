@@ -834,6 +834,8 @@ int main(int argc, char *argv[])
               check_email();
 	   update_stat(1);
 	   reload = TRUE;
+	   if (reload == TRUE)
+	      printf("reload is now set to TRUE");
 	}
    }
    endwin();
